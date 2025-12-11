@@ -2,8 +2,11 @@
 
 Credit Card transaction and customer weekly report using PowerBI and SQL
 
+
 Project Objective :
 To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+
+
 
 🛠 Key Steps Followed ;
 
@@ -17,6 +20,8 @@ Loaded the cleaned SQL tables into Power BI for modeling and visualization.
 
 4. Applied key DAX functions like WEEKNUM(), CALCULATE(), SUM(), and FILTER() to derive
 Current Week Revenue and Previous Week Revenue.
+
+
 
 
 📌 Key Insights + Key recommendations
@@ -44,6 +49,8 @@ Clear preference for physical card usage.
 9. Overall Delinquent rate is 6.06% 
 
 10. Graduates generate the highest revenue → 23M.
+
+
 
 🔐 Key recommendations ;
 
