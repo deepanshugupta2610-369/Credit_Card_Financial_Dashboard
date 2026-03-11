@@ -1,95 +1,321 @@
-# Credit_Card_Financial_Dashboard
+# 💳 Credit Card Financial Analytics Dashboard
 
-Credit Card transaction and customer weekly report using PowerBI and SQL
+An end-to-end **Business Intelligence and Financial Analytics project** built using **Power BI** to analyze credit card customer behavior, transaction patterns, and revenue drivers.
 
+This project simulates a **real-world financial analytics scenario** where raw credit card transaction data is transformed into an **interactive executive dashboard** to help stakeholders monitor customer segments, spending behavior, and overall credit card portfolio performance.
 
-<br>
+The dashboard enables financial institutions to track **key financial KPIs, customer demographics, transaction trends, and card category performance**, supporting **data-driven decision-making in the banking and financial services industry**.
 
+---
 
-Project Objective :
+# 🏦 Business Context
 
-To develop an interactive dashboard using transaction and customer data from a SQL database.
-It is a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+Credit card companies generate significant revenue through **customer transactions, interest charges, and card usage fees**. However, analyzing large volumes of financial data across multiple customer segments can be complex without proper analytics tools.
 
+Financial institutions need structured analytics solutions to:
 
-<br>
+• Identify **high-value customer segments**  
+• Monitor **revenue performance across card categories**  
+• Analyze **customer spending behavior**  
+• Track **transaction trends over time**  
+• Support **data-driven strategic decisions**
 
+This project demonstrates how **Business Intelligence tools like Power BI can convert raw financial datasets into actionable insights for financial decision-makers**.
 
-🛠 Key Steps Followed ;
+---
 
-1. Prepared the CSV files and created structured tables in SQL.
+# 🎯 Project Objective
 
-2. Imported the CSV data into SQL for preprocessing.
+The primary objective of this project is to develop a **Credit Card Financial Analytics Dashboard** that enables organizations to:
 
-Loaded the cleaned SQL tables into Power BI for modeling and visualization.
+• Monitor **credit card revenue and transaction performance**  
+• Identify **high-performing customer segments**  
+• Analyze **customer demographics and spending patterns**  
+• Track **revenue trends across quarters and weeks**  
+• Evaluate **card category performance**  
+• Generate insights for **business strategy and decision-making**
 
-3. Used SWITCH() to create calculated columns such as Age Group and Income Group.
+---
 
-4. Applied key DAX functions like WEEKNUM(), CALCULATE(), SUM(), and FILTER() to derive
-Current Week Revenue and Previous Week Revenue.
+# 📊 Dashboard Preview
 
+### Customer Analytics Dashboard
+![Customer Dashboard](<img width="1305" height="730" alt="image" src="https://github.com/user-attachments/assets/502d30c7-d3f4-4446-a7f4-89691c6438ca" />
+)
 
-<br>
+### Transaction Analytics Dashboard
+![Transaction Dashboard](Dashboard_Screenshots/transaction_dashboard.png)
 
+---
 
-📌 Key Insights + Key recommendations
+# 👨‍💻 My Role
 
- 1. Strong Weekly Revenue Trend by 28.8% as of last week 53%
+I independently designed and developed the **complete end-to-end analytics solution**, performing the following responsibilities:
 
- 2. Age group 40–60 = Strongest Revenue Segment
-This group drives the highest consistent revenue.
+• Conducted **data exploration and understanding of financial datasets**  
+• Performed **data cleaning and transformation using Power Query**  
+• Built the **data model and relationships between datasets**  
+• Developed **key financial KPIs using DAX**  
+• Designed **interactive Power BI dashboards for business analysis**  
+• Generated **business insights from transaction and customer data**
 
-3. White Collars & Businessmen = High Performers
-These two profession segments contribute the majority of revenue and interest.
+This project simulates the responsibilities of a **Data Analyst / Business Intelligence Analyst working within a financial services organization**.
 
-4. Male customers are contributing more in revenue 31 M while female 26 M
+---
 
-5. Blue and Silver Credit cards contributing to 93% of overall Transactions 
-Blue cards generate the highest revenue (47M+) across all categories.
+# 🧰 Technologies & Tools Used
 
- 6. Swipe Transactions Lead by a Big Margin
-Clear preference for physical card usage.
+| Technology | Purpose |
+|-----------|--------|
+| Power BI Desktop | Data visualization and dashboard development |
+| Power Query | Data transformation and cleaning |
+| DAX (Data Analysis Expressions) | KPI calculations and financial metrics |
+| Data Modeling | Creating relationships between datasets |
+| CSV Dataset | Raw financial transaction data |
 
- 7. Top States - TX, NY, CA remain the strongest revenue markets contributing to 68% 
+---
 
-8. Overall Activation rate is 57.5% 
+# 🏗 Analytics Architecture
 
-9. Overall Delinquent rate is 6.06% 
+The project follows a standard **Business Intelligence analytics pipeline**:
 
-10. Graduates generate the highest revenue → 23M.
+Raw Dataset  
+↓  
+Power Query (Data Cleaning & Transformation)  
+↓  
+Data Model (Relationships between datasets)  
+↓  
+DAX Measures (Financial KPIs and Calculations)  
+↓  
+Power BI Dashboard (Visualization & Insights)
 
+---
 
-<br>
+# 🔄 Project Workflow
 
+### 1️⃣ Data Understanding
 
-🔐 Key recommendations ;
+Reviewed the credit card dataset to understand key attributes including:
 
-1. Soft Monitoring for High-Risk Professions -
-Self-employed and business owners have income volatility.
-A 30%+ drop in monthly spend should trigger an early-warning monitoring band.
+• Customer demographics  
+• Card categories  
+• Transaction amounts  
+• Interest earned  
+• Spending categories  
+• Customer income segments
 
-Send a light alert to the risk team to observe behaviour for 30 days —
-no collections, just monitoring.
-This quietly prevents future potential NPAs.
+This step helped identify **important variables required for financial analysis**.
 
-2. Strengthen Retention for High-LTV Segments
+---
 
-Graduates and Businessmen contribute the highest revenue.
-Introduce micro-segment rewards:
+### 2️⃣ Data Cleaning & Transformation
 
-Graduates → EdTech, OTT, food delivery
+Performed preprocessing using **Power Query**:
 
-Businessmen → Travel, hotel, fuel 
-This increases stickiness and long-term value. 
+• Removed inconsistent or incomplete records  
+• Standardized categorical fields  
+• Verified dataset integrity  
+• Prepared the data for analysis
 
-3. Double Down on Top Revenue States (TX, NY, CA)
+This step ensured **data accuracy and reliability for analytics**.
 
-These states are already strong performers.
-Launch localized merchant partnerships with fuel stations, grocery chains, and retail stores.
-High volume impact with low cost.
+---
 
-4. Strengthen Fraud Protection on High-Value Swipes
+### 3️⃣ Data Modeling
 
-Swipe transactions above 20,000 should trigger an instant SMS + push notification.
+Designed a structured **analytical data model** by establishing relationships between customer and transaction datasets.
 
-A quick “Did you make this transaction?” validation adds zero-cost, high-impact fraud prevention.
+This enabled:
+
+• Efficient filtering across dashboards  
+• Accurate KPI calculations  
+• Consistent data aggregation
+
+---
+
+### 4️⃣ KPI Development using DAX
+
+Created several financial metrics using **DAX (Data Analysis Expressions)**:
+
+• Total Revenue  
+• Total Transaction Amount  
+• Total Interest Earned  
+• Transaction Count  
+• Weekly Revenue Trends
+
+These KPIs provide a **high-level financial performance overview**.
+
+---
+
+### 5️⃣ Dashboard Development
+
+Developed two interactive dashboards for business analysis.
+
+---
+
+## 📊 Customer Analytics Dashboard
+
+This dashboard focuses on **customer segmentation and demographic analysis**.
+
+Key visualizations include:
+
+• Revenue by Income Group  
+• Revenue by Age Group  
+• Revenue by Education Level  
+• Revenue by Marital Status  
+• Revenue by Customer Profession  
+• Revenue by Dependent Count  
+• Revenue by Top Performing States
+
+Purpose:
+
+✔ Identify **high-value customer segments**  
+✔ Understand **customer demographics driving revenue**
+
+---
+
+## 📊 Transaction Analytics Dashboard
+
+This dashboard focuses on **transaction behavior and spending patterns**.
+
+Key visualizations include:
+
+• Revenue by Expenditure Category  
+• Revenue by Card Category  
+• Revenue by Transaction Method (Swipe / Chip / Online)  
+• Quarterly Revenue vs Transaction Count  
+• Weekly Revenue Trend Analysis
+
+Purpose:
+
+✔ Analyze **customer spending behavior**  
+✔ Monitor **credit card transaction performance**
+
+---
+
+# 📈 Key Business KPIs
+
+| KPI | Value |
+|----|------|
+| Total Revenue | **57M** |
+| Total Transaction Amount | **46M** |
+| Total Interest Earned | **8M** |
+| Total Customer Income | **588M** |
+| Total Transactions | **667K** |
+
+These KPIs provide a **comprehensive financial overview of credit card performance**.
+
+---
+
+# 🔍 Key Business Insights
+
+Based on dashboard analysis:
+
+📌 **Blue card category generates the highest revenue contribution** compared to Silver, Gold, and Platinum cards.
+
+📌 **High-income customers contribute the largest share of credit card revenue.**
+
+📌 **Business professionals and white-collar customers represent the most profitable segments.**
+
+📌 **Swipe transactions dominate payment methods**, followed by chip and online transactions.
+
+📌 Spending is concentrated in **Bills, Entertainment, Fuel, and Grocery categories**.
+
+📌 Revenue trends remain **stable across quarters**, indicating consistent credit card usage.
+
+---
+
+# ⚠ Challenges & Solutions
+
+### Challenge 1: Structuring Data for Accurate Analysis
+
+Customer and transaction attributes required proper modeling to avoid incorrect aggregations.
+
+**Solution**
+
+Implemented structured relationships between datasets using **Power BI data modeling**, ensuring accurate filtering and calculations.
+
+---
+
+### Challenge 2: Transforming Raw Data into Business Insights
+
+Raw financial datasets can be difficult for business stakeholders to interpret directly.
+
+**Solution**
+
+Developed **KPI-focused dashboards with clear visualizations**, enabling decision-makers to quickly identify revenue drivers and customer behavior patterns.
+
+---
+
+# 📈 Business Value
+
+This analytics solution helps financial institutions:
+
+• Identify **high-value customer segments**  
+• Understand **credit card spending behavior**  
+• Monitor **financial performance indicators**  
+• Improve **credit card product strategies**  
+• Support **data-driven decision-making**
+
+---
+
+# 📌 Business Recommendations
+
+Based on the analysis, financial institutions can consider:
+
+• Expanding marketing campaigns targeting **high-income customer segments**
+
+• Promoting **premium card upgrades** for high-spending customers
+
+• Offering **reward incentives for digital transactions** to increase online usage
+
+• Designing targeted offers in high-spending categories such as **Bills and Entertainment**
+
+---
+
+# 📁 Repository Structure
+
+Credit-Card-Financial-Analytics  
+│  
+├── Dataset  
+├── PowerBI_Dashboard.pbix  
+├── SQL_Data_Preparation  
+├── Dashboard_Screenshots  
+└── README.md  
+
+---
+
+# 🚀 How to Use This Project
+
+1. Clone or download this repository  
+2. Open the **Power BI (.pbix) dashboard file**  
+3. Refresh the dataset if required  
+4. Use the dashboard filters and slicers to explore insights
+
+---
+
+# 💼 Skills Demonstrated
+
+This project demonstrates practical skills required for **Data Analyst / Business Intelligence roles**:
+
+✔ Data Visualization using Power BI  
+✔ Financial Data Analysis  
+✔ Business Intelligence Reporting  
+✔ Customer Segmentation Analysis  
+✔ KPI Development using DAX  
+✔ Data Modeling and Transformation  
+✔ Business Insight Generation
+
+---
+
+# 👨‍💻 Author
+
+**Deepanshu Gupta**
+
+Aspiring **Data Analyst | Power BI Developer | Business Analyst**
+
+Focused on building **data-driven solutions for financial analytics and business intelligence**.
+
+---
+
+⭐ If you found this project useful, consider giving the repository a **star**.
